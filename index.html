@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text"id="text">
+        <input type="submit" value="add">
+    </form>
+    <ul id="list"></ul>
+    <script>
+        let form=document.getElementById("form")
+        let  text=document.getElementById("text")
+        let list=document.getElementById("list")
+
+
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+             let listvalue=document.createElement("li")
+             listvalue.innerText=text.value
+             
+             list.appendChild(listvalue)
+             text.value=""
+        })
+        
+    </script>
+</body>
+</html>
