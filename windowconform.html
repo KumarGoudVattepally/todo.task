@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="but">CLICK ME</button>
+    <P id="para">Hello Kumar</P>
+    <script>
+         let button=document.getElementById("but")
+         let para=document.getElementById("para")
+         button.addEventListener("click",()=>{
+            
+            let win=window.confirm("ARE YOU SURE")
+            if(win)
+            para.innerHTML=""
+         })
+    </script>
+</body>
+</html>

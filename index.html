@@ -8,7 +8,7 @@
   <body>
     <form id="form">
       <input type="text" id="text" />
-      <input type="submit" value="add" />
+      <input type="submit" value="add" id="but" />
     </form>
     <ul id="list"></ul>
     <script>
@@ -21,6 +21,15 @@
         let listvalue = document.createElement("li");
         listvalue.innerText = text.value;
 
+        let button=document.getElementById("but")
+        //  let para=document.getElementById("para")
+         button.addEventListener("click",()=>{
+            
+            let win=window.confirm("ARE YOU SURE")
+            if(win)
+            // para.innerHTML=""
+            listvalue.innerText = text.value
+         })
         //  list.appendChild(listvalue)
         //  text.value=""
 
