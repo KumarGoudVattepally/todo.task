@@ -21,15 +21,14 @@
         let listvalue = document.createElement("li");
         listvalue.innerText = text.value;
 
-        let button=document.getElementById("but")
+        let button = document.getElementById("but");
         //  let para=document.getElementById("para")
-         button.addEventListener("click",()=>{
-            
-            let win=window.confirm("ARE YOU SURE")
-            if(win)
+        button.addEventListener("click", () => {
+          let win = window.confirm("ARE YOU SURE");
+          if (win)
             // para.innerHTML=""
-            listvalue.innerText = text.value
-         })
+            listvalue.innerText = text.value;
+        });
         //  list.appendChild(listvalue)
         //  text.value=""
 
